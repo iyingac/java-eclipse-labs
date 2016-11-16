@@ -51,7 +51,7 @@ public class Main {
 
         ArrayList<String> output = new ArrayList<String>();
         while (rs.next()) {
-          output.add( "Read from DB: " + rs.getString("Name") + ", Description: " + rs.getString("Description"));
+          output.add( "Read from DB: " + rs.getString("SFID") + ", Name" + rs.getString("Name") + ", Description: " + rs.getString("Description"));
         }
 
         attributes.put("results", output);
