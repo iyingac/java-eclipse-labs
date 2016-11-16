@@ -27,8 +27,8 @@ public class Main {
     get ("/Accounts",(req,res) -> {
     	String id= req.queryParams("id");
     	
-    	account acc =new account(id);
-    	return acc.GetDerails();
+    	account acc = new account(id);
+    	return "Id: " + id + ", Detail: {" + acc.GetDerails() + "}";
     } );
 
     get("/", (request, response) -> {
