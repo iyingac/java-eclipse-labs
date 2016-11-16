@@ -23,6 +23,13 @@ public class Main {
     get("/hello", (req, res) -> "Hello World");
     
     get("/lab", (req, res) -> "Test Labs");
+    
+    get ("/Accounts",(req,res) -> {
+    	String id= req.queryParams("Id");
+    	
+    	account acc =new account(id);
+    	return acc.GetDerails();
+    } );
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
