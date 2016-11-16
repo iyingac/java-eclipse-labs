@@ -27,7 +27,7 @@ public class account {
 	        connection = DatabaseUrl.extract().getConnection();
 
 	        Statement stmt = connection.createStatement();
-	        ResultSet rs = stmt.executeQuery("SELECT * FROM salesforce.Account where SFID="+AccId+"");
+	        ResultSet rs = stmt.executeQuery("SELECT * FROM salesforce.Account where SFID='"+AccId+"'");
 
 	        while (rs.next()) {
 	          Name= rs.getString("Name");
