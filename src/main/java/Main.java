@@ -25,7 +25,7 @@ public class Main {
     get("/lab", (req, res) -> "Test Labs");
     
     get ("/Accounts",(req,res) -> {
-    	String id= req.queryParams("Id");
+    	String id= req.queryParams("id");
     	
     	account acc =new account(id);
     	return acc.GetDerails();
