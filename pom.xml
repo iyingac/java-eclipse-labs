@@ -25,16 +25,11 @@
     <dependency>
       <groupId>com.heroku.sdk</groupId>
       <artifactId>heroku-jdbc</artifactId>
-      <version>1.0.0</version>
+      <version>0.1.1</version>
     </dependency>
   </dependencies>
   <build>
     <plugins>
-		<plugin>
-        <groupId>com.heroku.sdk</groupId>
-        <artifactId>heroku-maven-plugin</artifactId>
-        <version>1.0.0</version>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
